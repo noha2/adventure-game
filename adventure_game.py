@@ -35,9 +35,9 @@ def replay():
  
  
 def field():
-    choice = int(input("Enter 1 to go to the palace.\n"
+    choice = input("Enter 1 to go to the palace.\n"
                        "Enter 2 to peer into the cave.\n"
-                       "Please enter 1 or 2.\n"))
+                       "Please enter 1 or 2.\n")
     if choice == 1:
         palace()
     elif choice == 2:
