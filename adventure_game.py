@@ -65,17 +65,17 @@ def palace():
                        "1.start the war\n"
                        "2.end the gamr\n"))
     if optios == 1:
-    printsos("you are hero")
-    printsos("choose it now"+weapon)
+        printsos("you are hero")
+        printsos("choose it now"+weapon)
     if optios == 2:
-    printsos("i think it is the wrong choice")   
-    turnchoice = int(input("your choice 1 to complete or 2 \n"
+      printsos("i think it is the wrong choice")   
+      turnchoice = int(input("your choice 1 to complete or 2 \n"
                            "1.yes\n"
                            "2.no\n"))
-    if turnchoice == 1:
-    palace() 
-    elif turnchoice == 2:
-    gamrover()
+       if turnchoice == 1:
+          palace() 
+       elif turnchoice == 2:
+           gamrover()
 
 
 def gamrover():
