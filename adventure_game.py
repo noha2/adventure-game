@@ -59,18 +59,18 @@ def palace():
     printsos("the on fire now,are you ready or what. all the way fired  ")
     printsos("dont escape  i tell u before it is a game and joking with you")
     printsos(evil + "what the hell,it is big.war starts.let is destroy them")
-    optios = int(input("your optios 1 or 2 have not third !\n"
-                       "1.start the war\n"
-                       "2.end the gamr\n"))
+    optios = input("your optios 1 or 2 have not third !\n"
+                   "1.start the war\n"
+                   "2.end the gamr\n")
     if optios == 1:
         printsos("you are hero")
         printsos("choose it now"+weapon)
         field()
     if optios == 2:
                 printsos("i think it is the wrong choice")
-                turnchoice = int(input("your choice 1 to complete or 2 \n"
-                                       "1.yes\n"
-                                       "2.no\n"))
+                turnchoice = (input("your choice 1 to complete or 2 \n"
+                                    "1.yes\n"
+                                    "2.no\n"))
                 if turnchoice == 1:
                     palace()
                 elif turnchoice == 2:
@@ -84,3 +84,4 @@ def start():
     printsos("from where you will start")
     field()
 start()
+
