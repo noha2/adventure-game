@@ -14,8 +14,6 @@ weapon = random.choice(weapons)
 
 evil = random.choice(evils)
 
-# my game deteails 
-
 
 def printsos(message):
     print(message)
@@ -36,8 +34,8 @@ def replay():
  
 def field():
     choice = input("Enter 1 to go to the palace.\n"
-                       "Enter 2 to peer into the cave.\n"
-                       "Please enter 1 or 2.\n")
+                   "Enter 2 to peer into the cave.\n"
+                   "Please enter 1 or 2.\n")
     if choice == 1:
         palace()
     elif choice == 2:
@@ -67,22 +65,19 @@ def palace():
     if optios == 1:
         printsos("you are hero")
         printsos("choose it now"+weapon)
+        field()
     if optios == 2:
-      printsos("i think it is the wrong choice")   
-      turnchoice = int(input("your choice 1 to complete or 2 \n"
-                             "1.yes\n"
-                             "2.no\n"))
-      if turnchoice == 1:
-          palace() 
-      elif turnchoice == 2:
-          gamrover()
+                printsos("i think it is the wrong choice")   
+                turnchoice = int(input("your choice 1 to complete or 2 \n" 
+                                       "1.yes\n"  
+                                       "2.no\n"))        
+                if turnchoice == 1:
+                    palace() 
+                elif turnchoice == 2:
+                    printsos("GAME OVER\n")
+                    replay()
 
-
-def gamrover():
-    printsos("thanks.for playing") 
-    replay()
-    
-    
+        
 def start():
     printsos("your adventure start ... destroy him" + place)
     printsos("are you ready hero?! gooooo...!")
