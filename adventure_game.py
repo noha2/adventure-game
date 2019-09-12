@@ -30,8 +30,8 @@ def replay():
     else:
         printsos("Please anwser with y or n.")
         replay()
- 
- 
+
+
 def field():
     choice = input("Enter 1 to go to the palace.\n"
                    "Enter 2 to peer into the cave.\n"
@@ -53,8 +53,8 @@ def cave():
     printsos("now take it" + weapon)
     printsos("dont leave,look under X there is a tunnel.it take u to palace.")
     field()
-    
-    
+
+
 def palace():
     printsos("the on fire now,are you ready or what. all the way fired  ")
     printsos("dont escape  i tell u before it is a game and joking with you")
@@ -67,21 +67,20 @@ def palace():
         printsos("choose it now"+weapon)
         field()
     if optios == 2:
-                printsos("i think it is the wrong choice")   
-                turnchoice = int(input("your choice 1 to complete or 2 \n" 
-                                       "1.yes\n"  
-                                       "2.no\n"))        
+                printsos("i think it is the wrong choice")
+                turnchoice = int(input("your choice 1 to complete or 2 \n"
+                                       "1.yes\n"
+                                       "2.no\n"))
                 if turnchoice == 1:
-                    palace() 
+                    palace()
                 elif turnchoice == 2:
                     printsos("GAME OVER\n")
                     replay()
 
-        
+
 def start():
     printsos("your adventure start ... destroy him" + place)
     printsos("are you ready hero?! gooooo...!")
     printsos("from where you will start")
     field()
-
 start()
