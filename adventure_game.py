@@ -36,9 +36,9 @@ def field():
     choice = input("Enter 1 to go to the palace.\n"
                    "Enter 2 to peer into the cave.\n"
                    "Please enter 1 or 2.\n")
-    if choice == 1:
+    if choice == "1":
         palace()
-    elif choice == 2:
+    elif choice == "2":
         cave()
     else:
         printsos("Please enter 1 or 2.\n")
@@ -62,18 +62,18 @@ def palace():
     optios = input("your optios 1 or 2 have not third !\n"
                    "1.start the war\n"
                    "2.end the gamr\n")
-    if optios == 1:
+    if optios == "1":
         printsos("you are hero")
         printsos("choose it now"+weapon)
         field()
-    if optios == 2:
+    if optios == "2":
                 printsos("i think it is the wrong choice")
-                turnchoice = (input("your choice 1 to complete or 2 \n"
-                                    "1.yes\n"
-                                    "2.no\n"))
-                if turnchoice == 1:
-                    palace()
-                elif turnchoice == 2:
+                turnchoice = input("your choice 1 to complete or 2 \n"
+                                   "1.yes\n"
+                                   "2.no\n")
+                if turnchoice == "1":
+                    printsos("complete")
+                elif turnchoice == "2":
                     printsos("GAME OVER\n")
                     replay()
 
@@ -84,4 +84,3 @@ def start():
     printsos("from where you will start")
     field()
 start()
-
